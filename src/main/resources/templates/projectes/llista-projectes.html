@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div>
+  <h3>Projectes</h3>
+  <table>
+    <thead class="thead-dark">
+    <tr>
+      <th>Projecte Nom </th>
+      <th>Projecte Estat</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="projecte : ${projectes}">
+      <td th:text="${projecte.nom}"/>
+      <td th:text="${projecte.estat}"/>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
